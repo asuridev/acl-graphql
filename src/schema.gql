@@ -1,0 +1,27 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Languages {
+  tLanguage: [TLanguage!]!
+}
+
+type TLanguage {
+  sISOCode: String!
+  sName: String!
+}
+
+type Country {
+  sISOCode: String!
+  sName: String!
+  sCapitalCity: String!
+  sPhoneCode: String!
+  sContinentCode: String!
+  sCurrencyISOCode: String!
+  sCountryFlag: String!
+  Languages: Languages!
+}
+
+type Query {
+  country(code: String!): Country!
+}
