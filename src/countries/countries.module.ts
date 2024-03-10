@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { SoapModule, SoapModuleOptions, SoapModuleOptionsFactoryType } from 'nestjs-soap';
+import { SoapModule, SoapModuleOptionsFactoryType } from 'nestjs-soap';
 import { CountriesResolver } from './countries.resolver';
 import { CountriesService } from './countries.service';
 import { FetchCountryService } from './fetch-country.service';
